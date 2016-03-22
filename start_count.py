@@ -1,3 +1,9 @@
+##############################################################################################################
+#                                       Author - Swanand Mhalagi                                             #
+#                       This program requires image file to be downloaded.                                   #
+#	wget http://www.spacetelescope.org/static/archives/images/publicationtiff40k/heic1502a.tif           #
+################################################################################################################
+
 import numpy as np
 import Image
 import cv2
