@@ -27,3 +27,6 @@ hello world from process 1
 hello world from process 3
 hello world from process 2
 hello world from process 4
+
+For more MPI tutorials --> http://materials.jeremybejarano.com/MPIwithPython/introMPI.html
+
