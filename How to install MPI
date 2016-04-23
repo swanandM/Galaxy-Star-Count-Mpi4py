@@ -1,0 +1,29 @@
+Follow the below instructions to install Mpi4py on Ubuntu 14.04.1
+
+Login as root user or do --> sudo su -
+And now execute below commands
+
+apt-get update
+apt-get install build-essential 
+apt-get install openmpi-bin openmpi-checkpoint openmpi-common openmpi-doc libopenmpi-dev
+sudo apt-get install python-pip
+sudo apt-get install python-dev
+sudo pip install mpi4py
+
+To check whether MPI is installed or not
+Copy below program and name the file as hello.py
+
+#hello.py
+from mpi4py import MPI
+comm = MPI.COMM_WORLD
+rank = comm.Get_rank()
+print "hello world from process ", rank
+
+To run the program --> mpiexec -n 5 python  hello.py
+Output will be as mentioned below (Number sequence may vary)
+
+hello world from process 0
+hello world from process 1
+hello world from process 3
+hello world from process 2
+hello world from process 4
